@@ -23,7 +23,9 @@ namespace StackQueueRawImplementation
             }
 
             T data = top!.Data;
-            top = top.Next;
+            Node<T> nextNode = top.Next!;
+            top!.Next = null;
+            top = nextNode;
             return data;
         }
 
@@ -44,7 +46,7 @@ namespace StackQueueRawImplementation
             while (current != null)
             {
                 Console.WriteLine(current.Data);
-                current = current.Next;
+                current = current.Next!;
             }
         }
     }

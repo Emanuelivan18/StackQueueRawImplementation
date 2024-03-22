@@ -13,14 +13,14 @@
             Console.WriteLine("Pop: " + myStack.Pop());
             myStack.Print();
 
-            //MyQueue<string> myQueue = new MyQueue<string>();
-            //myQueue.Enqueue("A");
-            //myQueue.Enqueue("B");
-            //myQueue.Enqueue("C");
-            //myQueue.Print();
-            //Console.WriteLine("Dequeue: " + myQueue.Dequeue());
-            //Console.WriteLine("Dequeue: " + myQueue.Dequeue());
-            //myQueue.Print();
+            MyQueue<string> myQueue = new MyQueue<string>();
+            myQueue.Enqueue("A");
+            myQueue.Enqueue("B");
+            myQueue.Enqueue("C");
+            myQueue.Print();
+            Console.WriteLine("Dequeue: " + myQueue.Dequeue());
+            Console.WriteLine("Dequeue: " + myQueue.Dequeue());
+            myQueue.Print();
         }
     }
 }

@@ -34,7 +34,9 @@ namespace StackQueueRawImplementation
             }
 
             T data = front!.Data;
-            front = front.Next;
+            Node<T> nextNode = front.Next!;
+            front.Next = null;
+            front = nextNode;
             if (front == null)
             {
                 rear = null;
@@ -59,7 +61,7 @@ namespace StackQueueRawImplementation
             while (current != null)
             {
                 Console.WriteLine(current.Data);
-                current = current.Next;
+                current = current.Next!;
             }
         }
     }
